@@ -14,7 +14,7 @@ function getHumanChoice(){
     let choice = prompt("Choose one Rock/Paper/Scissor :");
     return choice;
 }
-
+// function to play only one round
 function playRound(humanChoice,computerChoice){
     humanChoice = getHumanChoice().toLowerCase();
     computerChoice = getComputerChoice();
@@ -40,4 +40,10 @@ function playRound(humanChoice,computerChoice){
     console.log(`Your Score : ${humanScore} , Computer Score : ${computerScore}`);
 }
 
-playRound();
+// function to play game, 5 rounds
+function playGame(){
+    for(let i=1;i<=5;i++){
+        console.log(`Round ${i} :`);
+        playRound();
+    }
+}
