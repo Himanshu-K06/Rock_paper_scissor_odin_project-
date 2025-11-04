@@ -46,6 +46,10 @@ function playGame(){
         console.log(`Round ${i} :`);
         playRound();
     }
+
+    if(humanScore>computerScore) console.log("YOU WON THE GAME !!");
+    else if(humanScore>computerScore) console.log("YOU LOSE THE GAME !!");
+    else  console.log("THE GAME WAS A TIE!!");
 }
 
 playGame();
