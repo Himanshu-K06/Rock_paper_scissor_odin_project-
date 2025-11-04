@@ -47,3 +47,5 @@ function playGame(){
         playRound();
     }
 }
+
+playGame();
